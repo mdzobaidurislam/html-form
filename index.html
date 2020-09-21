@@ -1,1 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML FORM</title>
+        <style>
+            .regiForm {
+                border: 1px solid #e4e4e4;
+                width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                background: #fdfbfb;
+                box-shadow: 1px 2px 3px 0 rgb(183 183 183 / 70%);
+            }
+            .regiForm h1 {
+                text-align: center;
+                font-weight: 700;
+                font-family: sans-serif;
+                color: orange;
+            }
 
+            .common,
+            .fast {
+                padding: 15px 0;
+            }
+
+            .common label,
+            .fast label {
+                /* margin-right: 50px; */
+                font-size: 20px;
+                color: #251b04;
+                font-weight: 400;
+                font-family: sans-serif;
+                width: 200px;
+                float: left;
+            }
+
+            .common select,
+            .fast select {
+                padding: 10px 5px;
+                border-color: orange;
+                width: 460px;
+            }
+
+            .warp {
+                width: 100%;
+            }
+
+            .warp label {
+                padding: 10px 0;
+                display: block;
+                width: 100%;
+                font-size: 20px;
+            }
+
+            .warp input {
+                display: block;
+                width: 56%;
+                padding: 10px;
+                border-color: orange;
+                outline: 0;
+                border: 1px solid orange;
+            }
+            .row-1 {
+                width: 100%;
+                overflow: hidden;
+            }
+            .col-6 {
+                width: 50%;
+                float: left;
+            }
+            .col-12 {
+                width: 100%;
+                float: left;
+            }
+            .col-4 {
+                width: 30.33%;
+                float: left;
+                margin: 0 15px;
+            }
+
+            .col-4:first-child {
+                margin: 0 15px 0 0;
+            }
+            .col-6:first-child {
+                margin: 0;
+            }
+
+            .l-i-f-style label {
+                display: block;
+                width: 100%;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .l-i-f-style input {
+                padding: 10px;
+                width: 91%;
+                border-color: orange;
+                border: 1px solid orange;
+            }
+
+            .select-100 select {
+                width: 100%;
+            }
+            label.inline-l {
+                width: 137px;
+                float: left;
+                margin-top: 30px;
+            }
+
+            input.inline-i {
+                width: 16px;
+                margin-top: 35px;
+            }
+
+            .button button {
+                background: #131210;
+                border: none;
+                padding: 15px 50px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: sans-serif;
+                letter-spacing: 1px;
+                border-radius: 8px;
+            }
+            button.btn2 {
+                background: orange;
+            }
+            p {
+                font-weight: bold;
+                color: #323232;
+                font-family: serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="regiForm">
+            <h1>Registration for SEIP Project</h1>
+            <hr>
+            <p>Select Course:(One person will be eligible for one course only)</p>
+            <div>
+                <form action="">
+                    <div class="fast">
+                        <label for="">First Preference*:</label>
+                        <select>
+                            <option value="">Select Course</option>
+                            <option value="">Web App Develop- PHP</option>
+                            <option value="">Web App Develop-Dot Net</option>
+                            <option value="">Affiliate Marketing</option>
+                            <option value="">English &amp; business Communication</option>
+                            <option value="">Server Administration &amp; Cloud Management</option>
+                            <option value="">IT support Technical</option>
+                            <option value="">IT Sales</option>
+                            <option value="">Customer Support &amp; Service</option>
+                            <option value="">Practical SEO</option>
+                            <option value="">Web design</option>
+                            <option value="">Graphics &amp; Web UI design</option>
+                            <option value="">Mobile App Develop</option>
+                            <option value="">Digital Marketing Course</option>
+                        </select>
+                    </div>
+                    <div class="two common">
+                        <label for="">Second Preference*:</label>
+                        <select>
+                            <option value="">Select Course</option>
+                            <option value="">Web App Develop- PHP</option>
+                            <option value="">Web App Develop-Dot Net</option>
+                            <option value="">Affiliate Marketing</option>
+                            <option value="">English &amp; business Communication</option>
+                            <option value="">Server Administration &amp; Cloud Management</option>
+                            <option value="">IT support Technical</option>
+                            <option value="">IT Sales</option>
+                            <option value="">Customer Support &amp; Service</option>
+                            <option value="">Practical SEO</option>
+                            <option value="">Web design</option>
+                            <option value="">Graphics &amp; Web UI design</option>
+                            <option value="">Mobile App Develop</option>
+                            <option value="">Digital Marketing Course</option>
+                        </select>
+                    </div>
+
+                    <div class="three common">
+                        <label for="">Third Preference*:</label>
+                        <select>
+                            <option value="">Select Course</option>
+                            <option value="">Web App Develop- PHP</option>
+                            <option value="">Web App Develop-Dot Net</option>
+                            <option value="">Affiliate Marketing</option>
+                            <option value="">English &amp; business Communication</option>
+                            <option value="">Server Administration &amp; Cloud Management</option>
+                            <option value="">IT support Technical</option>
+                            <option value="">IT Sales</option>
+                            <option value="">Customer Support &amp; Service</option>
+                            <option value="">Practical SEO</option>
+                            <option value="">Web design</option>
+                            <option value="">Graphics &amp; Web UI design</option>
+                            <option value="">Mobile App Develop</option>
+                            <option value="">Digital Marketing Course</option>
+                        </select>
+                    </div>
+                    <div class="five common">
+                        <div class="warp">
+                            <label for="">Name *:</label>
+                            <input type="text" placeholder="Enter Your Name">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="six select-100  l-i-f-style common">
+                        <div class="row-1">
+                            <div class="col-4">
+                                <label for="">Father Name *:</label>
+                                <input type="text" placeholder="Enter Your Father  Name">
+                            </div>
+                            <div class="col-4">
+                                <label for="">Mother Name *:</label>
+                                <input type="text" placeholder="Enter Your Mother  Name">
+                            </div>
+                            <div class="col-4">
+                                <label for="">Gender*:</label>
+                                <select name="" id="">
+                                    <option value="">Select Gender</option>
+                                    <option value="">Female</option>
+                                    <option value="">Male</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="seven l-i-f-style common">
+                        <div class="row-1">
+                            <div class="col-12">
+                                <label for="">National ID *:</label>
+                                <input type="text" placeholder="Enter Your National ID">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="eight select-100  l-i-f-style common">
+                        <div class="row-1">
+                            <div class="col-4">
+                                <label for="">Date of Birth*:</label>
+                                <input type="date">
+                            </div>
+                            <div class="col-4">
+                                <label for="">Religion*:</label>
+                                <select name="religion" id="religion" class="religion">
+                                    <option value="">Select Religion</option>
+                                    <option value="Islam">Islam</option>
+                                    <option value="Hinduism">Hinduism</option>
+                                    <option value="Buddhism">Buddhism</option>
+                                    <option value="Christianity">Christianity</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <label for="">Ethnic Group:*</label>
+                                <select name="ethnic_group" id="ethnic_group" class="">
+                                    <option value="" selected="selected">Select Ethnic Group</option>
+                                    <option value="Armenian community of Dhaka">Armenian community of Dhaka</option>
+                                    <option value="Armenians in Bangladesh">Armenians in Bangladesh</option>
+                                    <option value="Bagdi caste">Bagdi caste</option>
+                                    <option value="Bom people">Bom people</option>
+                                    <option value="Bede people">Bede people</option>
+                                    <option value="Bedia (Muslim caste)">Bedia (Muslim caste)</option>
+                                    <option value="Bengali Hindus">Bengali Hindus</option>
+                                    <option value="Bengali Muslims">Bengali Muslims</option>
+                                    <option value="Bengali people">Bengali people</option>
+                                    <option value="Bihari Muslims">Bihari Muslims</option>
+                                    <option value="Bihari people">Bihari people</option>
+                                    <option value="Buno people">Buno people</option>
+                                    <option value="Chak people">Chak people</option>
+                                    <option value="Chakma people">Chakma people</option>
+                                    <option value="Chinese people in Bangladesh">Chinese people in Bangladesh</option>
+                                    <option value="Dhanuk">Dhanuk</option>
+                                    <option value="Garo people">Garo people</option>
+                                    <option value="Indians in Bangladesh">Indians in Bangladesh</option>
+                                    <option value="Indigenous peoples in Bangladesh">Indigenous peoples in Bangladesh</option>
+                                    <option value="Jumma people">Jumma people</option>
+                                    <option value="Kan (tribe)">Kan (tribe)</option>
+                                    <option value="Khasi people">Khasi people</option>
+                                    <option value="Khumi people">Khumi people</option>
+                                    <option value="Khyang people">Khyang people</option>
+                                    <option value="Kuki Inpi">Kuki Inpi</option>
+                                    <option value="Kuki people">Kuki people</option>
+                                    <option value="Kurukh people">Kurukh people</option>
+                                    <option value="Lushei tribe">Lushei tribe</option>
+                                    <option value="Mahle people">Mahle people</option>
+                                    <option value="Maimal">Maimal</option>
+                                    <option value="Mustafa Majid">Mustafa Majid</option>
+                                    <option value="Mal Muslim">Mal Muslim</option>
+                                    <option value="Marma people">Marma people</option>
+                                    <option value="Mro people">Mro people</option>
+                                    <option value="Munda people">Munda people</option>
+                                    <option value="Murang people">Murang people</option>
+                                    <option value="Naulak">Naulak</option>
+                                    <option value="Nepalis in Bangladesh">Nepalis in Bangladesh</option>
+                                    <option value="Pankho people">Pankho people</option>
+                                    <option value="Rakhine people, Bangladesh">Rakhine people, Bangladesh</option>
+                                    <option value="Rohingya people">Rohingya people</option>
+                                    <option value="Santhal people">Santhal people</option>
+                                    <option value="Stranded Pakistanis">Stranded Pakistanis</option>
+                                    <option value="Tanchangya people">Tanchangya people</option>
+                                    <option value="Thadou people">Thadou people</option>
+                                    <option value="Template:Tribes of Bangladesh">Template:Tribes of Bangladesh</option>
+                                    <option value="Tripuri people">Tripuri people</option>
+                                    <option value="Vaiphei people">Vaiphei people</option>
+                                    <option value="Zo people">Zo people</option>
+                                    <option value="Zomi nationalism">Zomi nationalism</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nine l-i-f-style common  ">
+                        <div class="row-1">
+                            <div class="col-6">
+                                <label for="">Mobile *:</label>
+                                <input type="text" placeholder="Enter Your Mobile">
+                            </div>
+                            <div class="col-6">
+                                <label for="">Email *:</label>
+                                <input type="email" placeholder="Enter Your Email">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ten custom-l-i l-i-f-style common">
+                        <div class="row-1">
+                            <div class="col-6">
+                                <label class="inline-l" for="">Is Employed?:</label>
+                                <input class="inline-i" type="radio">Yes
+                                <input class="inline-i" type="radio">No
+                            </div>
+                            <div class="col-6">
+                                <label for="">Monthly Income:</label>
+                                <input type="text" placeholder="Enter Your Monthly Income">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h2>Present Address</h2>
+                    <hr>
+                    <div class="tw12 l-i-f-style select-100 common">
+                        <div class="row-1">
+                            <div class="col-4">
+                                <label for="">Address:</label>
+                                <input type="text" placeholder="Enter Your Address ">
+                            </div>
+                            <div class="col-4">
+                                <label for="">City:</label>
+                                <input type="text" placeholder="Enter Your City ">
+                            </div>
+                            <div class="col-4">
+
+                                <label for="">Post Code:</label>
+                                <input type="text" placeholder="Enter Your Post Code ">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row-1">
+                            <div class="col-4">
+                                <label for="">Division:</label>
+                                <select name="">
+                                    <option value="" selected="selected">Select Division</option>
+                                    <option value="Barisal">Barisal</option>
+                                    <option value="Chittagong">Chittagong</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Khulna">Khulna</option>
+                                    <option value="Rajshahi">Rajshahi</option>
+                                    <option value="Rangpur">Rangpur</option>
+                                    <option value="Sylhet">Sylhet</option>
+                                </select>
+                            </div>
+
+                            <div class="col-4">
+                                <label for="">District:</label>
+                                <select name="">
+                                    <option value="" selected="selected">Select District</option>
+                                    <option value="Barisal">Barisal</option>
+                                    <option value="Chittagong">Chittagong</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Khulna">Khulna</option>
+                                </select>
+                            </div>
+
+                            <div class="col-4">
+                                <label for="">Sub-District:</label>
+                                <select name="">
+                                    <option value="" selected="selected">Select District</option>
+                                    <option value="Barisal">Barisal</option>
+                                    <option value="Chittagong">Chittagong</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Khulna">Khulna</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Permanent Address</h2>
+                    <hr>
+                    <div class="f-15 l-i-f-style select-100 common">
+                        <div class="row-1">
+                            <div class="col-4">
+                                <label for="">Address:</label>
+                                <input type="text" placeholder="Enter Your Address ">
+                            </div>
+                            <div class="col-4">
+                                <label for="">City:</label>
+                                <input type="text" placeholder="Enter Your City ">
+                            </div>
+                            <div class="col-4">
+
+                                <label for="">Post Code:</label>
+                                <input type="text" placeholder="Enter Your Post Code ">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row-1">
+                            <div class="col-4">
+                                <label for="">Division:</label>
+                                <select name="">
+                                    <option value="" selected="selected">Select Division</option>
+                                    <option value="Barisal">Barisal</option>
+                                    <option value="Chittagong">Chittagong</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Khulna">Khulna</option>
+                                    <option value="Rajshahi">Rajshahi</option>
+                                    <option value="Rangpur">Rangpur</option>
+                                    <option value="Sylhet">Sylhet</option>
+                                </select>
+                            </div>
+
+                            <div class="col-4">
+                                <label for="">District:</label>
+                                <select name="">
+                                    <option value="" selected="selected">Select District</option>
+                                    <option value="Barisal">Barisal</option>
+                                    <option value="Chittagong">Chittagong</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Khulna">Khulna</option>
+                                </select>
+                            </div>
+
+                            <div class="col-4">
+                                <label for="">Sub-District:</label>
+                                <select name="">
+                                    <option value="" selected="selected">Select District</option>
+                                    <option value="Barisal">Barisal</option>
+                                    <option value="Chittagong">Chittagong</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Khulna">Khulna</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <h2>Highest Academic Achievement</h2>
+                <hr>
+                <div class="f-17 l-i-f-style common">
+                    <div class="row-1">
+                        <div class="col-6">
+                            <label for="">Level of Education::</label>
+                            <input type="text" placeholder="Enter Your Level of Education ">
+                        </div>
+                        <div class="col-6">
+
+                            <label for="">Institute:</label>
+                            <input type="text" placeholder="Enter Your Institute ">
+                        </div>
+                    </div>
+                    <div class="row-1">
+                        <br>
+                        <br>
+                        <div class="col-6">
+
+                            <label for="">Subject:</label>
+                            <input type="text" placeholder="Enter Your Subject ">
+                        </div>
+                        <div class="col-6">
+
+                            <label for="">Year:</label>
+                            <input type="text" placeholder="Enter Your Year ">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <h2>Photo</h2>
+                <hr>
+                <div class="f-18 l-i-f-style common">
+
+                    <div class="row-1">
+                        <div class="col-6">
+                            <input type="file">
+                            <br>
+                            <span>Image size should be 300x300 (Max 100KB) in JPG Format
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <h2>Security</h2>
+                <hr>
+                <div class="f-19 l-i-f-style  common">
+                    <div class="row-1">
+                        <div class="col-4">
+                            <label for="">Type the code:</label>
+                            <input type="text" placeholder="Code">
+                        </div>
+                        <div class="col-4">
+                            <img
+                                src="https://seip.bitm.org.bd/captcha/1600669185.5539.jpg"
+                                width="120"
+                                height="35"
+                                style="border:0;"
+                                alt=" " align="
+                                absmiddle"="
+                                absmiddle""="absmiddle"
+                                "">
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="button">
+                    <center>
+                        <button type="submit">Reset</button>
+                        <button type="submit" class="btn2">Save</button>
+                    </center>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
